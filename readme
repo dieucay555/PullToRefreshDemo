@@ -14,7 +14,7 @@
              
 
 
-2, can not cast from PullToRefreshListFragment
+2, can not cast from Fragment to PullToRefreshListFragment
 
    caused by:
    
