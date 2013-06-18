@@ -1,0 +1,25 @@
+-----------Note For Pulltorefresh Demo-----------
+
+1, the project can not find class ViewPager but you has put the v4 jar in folder libs.
+
+   caused by:
+   
+             the v4 jar is not packed in apk
+
+   solution:  
+   
+             1-1 enter Java Build Path
+             1-2 select the fouth category: Order and Exclude
+             1-3 selcet the v4 jar (in Android private Library)
+             
+
+
+2, can not cast from PullToRefreshListFragment
+
+   caused by:
+   
+              if you use v4 jar, there are two Fragment, one is android.app.ListFragment, one is android.support.v4.app.ListFragment.
+              
+  solution:
+  
+              include the android.support.v4.app.ListFragment
